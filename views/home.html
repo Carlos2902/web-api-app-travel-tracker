@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- General styles for home-page -->
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+
+  <div class="container">
+      <!-- Navbar-Header -->
+      <div class="header clearfix">
+        <nav class="navbar navbar-expand-sm navbar-light ">
+          <a href="#"
+          class="navbar-brand mb-0 h1">
+          <img 
+          class="d-inline-block align-top"
+          src="/assets/airhub-logo.png" 
+          alt="airhub-logo"
+          width="130px"
+          height="50px">
+        </a>
+    
+        <!-- Hamburger menu for small devices -->
+    
+        <button 
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse class for responsive design -->
+          <!-- HEADER CONTENT -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item active">
+                <a href="#" class="nav-link ">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="#" class="nav-link">
+                  Flights
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="#" class="nav-link">
+                  FAQs
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="#" class="nav-link">
+                  Weather
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="#" class="nav-link">
+                  Flight Radar
+                </a>
+              </li>
+            </ul>
+        </div>
+        </nav>
+      </div>
+
+      <!-- Hero content -->
+      <div class="jumbotron text-center position-relative style="margin-top: 50px;">
+        <div class="d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0">
+          <h1 class=" fw-bold text-end display-5" style="color: #2b2674;">Let's track your flight!</h1>
+        </div>
+
+
+        <img src="/assets/track-ur-flight.png" alt="" class="img-fluid rounded mx-auto d-block" style="max-width: 100%;">
+        
+        <p>
+          <a class="btn btn-lg btn btn-warning"
+          href="#" role="button"
+          style="margin-top: 20px;">By Flight Number</a>
+          <button class="btn btn-lg btn-outline-warning "
+          href="#" role="button"
+          style="margin-top: 20px;"">By Route</button>
+        </p>
+
+        
+      </div>
+      <!-- Search bar -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+    
+    
+  </div>
+  </body>
+</html>
