@@ -26,22 +26,13 @@ async function fetchData() {
             longitude,
             // Include other properties as needed
         }));
-        // Now extractedData contains an array of objects with the desired properties
-        console.log(extractedData);
-
-     // Iterate through the aircraft array using forEach()
-    flightData.aircraft.forEach(([id, label, latitude, longitude, ...rest]) => {
-    // Do something with each aircraft data
-    console.log(`Aircraft ID: ${id}`);
-    console.log(`Label: ${label}`);
-    console.log(`Latitude: ${latitude}`);
-    console.log(`Longitude: ${longitude}`);
-    // Include other properties as needed
-});
+        
+        // Export the extractedData array
+        return extractedData;
     } catch (error) {
         console.error(error);
     }
 }
 
 // Call the async function to fetch data
-fetchData();
+export default fetchData;
