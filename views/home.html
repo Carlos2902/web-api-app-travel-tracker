@@ -14,7 +14,7 @@
   </head>
   <body>
 
-  <div class="container">
+  <div class="container container">
 
       <header>
         <!-- Navbar-Header -->
@@ -126,6 +126,38 @@
       <!-- Flight Radar map -->
       <div id="map"></div>
 
+      
+          <section class="airport-arrivals  ">
+            <div>
+              <br>
+              <h2>Airpot Time Arrivals</h2>
+              <p>Stay updated on your airport timetable
+                schedule with our easy-to-use tracking 
+                feature! Never miss a flight again by 
+                keeping tabs on your airport timetable
+                schedule. With our real-time updates,
+                you'll always be in the know! </p>
+            </div>
+            <div class="search-form">
+              <div class="row g-3">
+                <div class="col-md-3">
+                  <label for="departure-airport" class="form-label">Departure Airport (IATA code):</label>
+                  <input type="text" id="departure-airport" name="departure-airport" class="form-control" placeholder="e.g., YYZ" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="arrival-airport" class="form-label">Arrival Airport (IATA code):</label>
+                  <input type="text" id="arrival-airport" name="arrival-airport" class="form-control" placeholder="e.g., JFK" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="arrival-date" class="form-label">Arrival Date:</label>
+                  <input type="date" id="arrival-date" name="arrival-date" class="form-control" required>
+                </div>
+                <div class="col-md-3 align-self-end">
+                  <button id="find-flights" class="btn btn-primary w-100">Find Flights</button>
+                </div>
+              </div>
+            </div>
+          </section>
   </div>
 
 
