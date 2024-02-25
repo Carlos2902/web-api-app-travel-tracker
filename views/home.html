@@ -14,7 +14,7 @@
   </head>
   <body>
 
-  <div class="container container">
+  <div class="container ">
 
       <header>
         <!-- Navbar-Header -->
@@ -127,7 +127,8 @@
       <div id="map"></div>
 
       
-          <section class="airport-arrivals  ">
+      <!-- Airport arrivals section -->
+          <section class="airport-arrivals  mb-5">
             <div>
               <br>
               <h2>Airpot Time Arrivals</h2>
@@ -148,7 +149,7 @@
                   <label for="arrival-airport" class="form-label">Arrival Airport (IATA code):</label>
                   <input type="text" id="arrival-airport" name="arrival-airport" class="form-control" placeholder="e.g., JFK" required>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3" >
                   <label for="arrival-date" class="form-label">Arrival Date:</label>
                   <input type="date" id="arrival-date" name="arrival-date" class="form-control" required>
                 </div>
@@ -158,6 +159,22 @@
               </div>
             </div>
           </section>
+
+          <div id="flight-details">
+            <!-- Table for displaying flight arrival details -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Flight Number</th>
+                  <th>Departure</th>
+                  <th>Arrival</th>
+                </tr>
+              </thead>
+              <tbody id="flight-details-body">
+                <!-- Flight details rows will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>
   </div>
 
 
@@ -166,10 +183,14 @@
   </body>
   <script type="module" src="/API/fetchFlightData.js"></script>
   <script type="module" src="/API/leaflet.js"></script>
+
+  <!-- AFTER DomContent is loaded, display the data of the flights in the map -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         fetchData();
     });
 </script>
+  
+  <script src="/API/flightSchdule.js"></script>
 
 </html>
