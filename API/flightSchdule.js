@@ -88,7 +88,12 @@ function populateTable(flights) {
   const tableBody = document.getElementById('flight-details-body');
   tableBody.innerHTML = ''; // Clear previous contents
   
-  // Loop through each flight and create a table row for it
+
+
+    // Display the headers table
+    document.getElementById('flight-details').style.display="block";
+
+  // Loop through each flight and create a table row for the content
   flights.forEach(flight => {
       const row = document.createElement('tr');
       row.innerHTML = `
@@ -98,4 +103,6 @@ function populateTable(flights) {
       `;
       tableBody.appendChild(row);
   });
+
+
 }
