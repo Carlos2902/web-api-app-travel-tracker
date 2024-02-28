@@ -16,68 +16,69 @@
 
   <div class="container ">
 
-      <header>
-        <!-- Navbar-Header -->
-        <div class="header clearfix">
-          <nav class="navbar navbar-expand-sm navbar-light ">
-            <a href="#"
-            class="navbar-brand mb-0 h1">
-            <img 
-            class="d-inline-block align-top"
-            src="/assets/airhub-logo.png" 
-            alt="airhub-logo"
-            width="130px"
-            height="50px">
-          </a>
-      
-          <!-- Hamburger menu for small devices -->
-      
-          <button 
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          class="navbar-toggler"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <!-- Collapse class for responsive design -->
-            <!-- HEADER CONTENT -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav ">
-                <li class="nav-item active">
-                  <a href="#" class="nav-link ">
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item active">
-                  <a href="#" class="nav-link">
-                    Flights
-                  </a>
-                </li>
-                <li class="nav-item active">
-                  <a href="#" class="nav-link">
-                    FAQs
-                  </a>
-                </li>
-                <li class="nav-item active">
-                  <a href="#" class="nav-link">
-                    Weather
-                  </a>
-                </li>
-                <li class="nav-item active">
-                  <a href="#" class="nav-link">
-                    Flight Radar
-                  </a>
-                </li>
-              </ul>
-          </div>
-          </nav>
-        </div>
-      </header>
+          <!-- navbar -->
+          <header>
+            <!-- Navbar-Header -->
+            <div class="header clearfix">
+              <nav class="navbar navbar-expand-sm navbar-light ">
+                <a href="#"
+                class="navbar-brand mb-0 h1">
+                <img 
+                class="d-inline-block align-top"
+                src="/assets/airhub-logo.png" 
+                alt="airhub-logo"
+                width="130px"
+                height="50px">
+              </a>
+          
+              <!-- Hamburger menu for small devices -->
+          
+              <button 
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              class="navbar-toggler"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <!-- Collapse class for responsive design -->
+                <!-- HEADER CONTENT -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                      <a href="/" class="nav-link ">
+                        Home
+                      </a>
+                    </li>
+                    <li class="nav-item active" ">
+                      <a href="/views/flights/flights.html" class="nav-link">
+                        Flights
+                      </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a href="#" class="nav-link">
+                        FAQs
+                      </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a href="#" class="nav-link">
+                        Weather
+                      </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a href="#" class="nav-link">
+                        Flight Radar
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+              </nav>
+            </div>
+          </header>
 
       <main class="py-5">
         <!-- This section is gonna redirect 
@@ -205,6 +206,7 @@
       </main>
       
 
+      <!-- Footer -->
         <div class="container">
           <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-6 py-5 my-5 border-top">
             <div class="col mb-3">
@@ -279,7 +281,7 @@
         </ul>
       <p>&copy; 2024 AirHub | All rights reserved.</p>
     </div>
-    </div>
+        </div>
 
         
               
@@ -289,8 +291,9 @@
 
   
   </body>
-  <script type="module" src="/API/fetchFlightData.js"></script>
-  <script type="module" src="/API/leaflet.js"></script>
+
+  <script type="module" src="/API/home/fetchFlightData.js"></script>
+  <script type="module" src="/API/home/leaflet.js"></script>
 
   <!-- AFTER DomContent is loaded, display the data of the flights in the map -->
   <script>
@@ -299,6 +302,6 @@
     });
 </script>
   
-  <script src="/API/flightSchdule.js"></script>
+  <script src="/API/home/flightSchdule.js"></script>
 
 </html>
